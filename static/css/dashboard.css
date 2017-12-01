@@ -1,0 +1,71 @@
+body {
+    padding-top: 50px;
+}
+.sub-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar-fixed-top {
+    border: 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 45px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+    background-color: transparent;
+    border-right: 1px dashed #10586b;
+}
+
+.nav-sidebar {
+    margin-right: -21px;
+    /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+
+.nav-sidebar>li>h4, .nav-sidebar>li>a {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.nav-sidebar>li:hover>a:hover,
+.nav-sidebar>li:focus>a:focus,
+.nav-sidebar>li>a:hover,
+.nav-sidebar>li>a:focus {
+    color: white;
+    background-color: rgba(171, 171, 171, 0.26);
+    border-radius: 0px 12px 12px 0px;
+}
+.nav-sidebar>.active>a, 
+.nav-sidebar>.active>a:hover,
+.nav-sidebar>.active>a:focus{
+    color: white;
+    background-color: rgba(116, 239, 226, 0.26) !important;
+    border-radius: 0px 12px 12px 0px !important;
+}
+
+.main {
+    padding: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding-right: 20px;
+        padding-left: 150px;
+    }
+}
+
+.main .page-header {
+    margin-top: 0;
+}
